@@ -25,18 +25,22 @@ const aboutData = [
       {
         title: 'Web Development',
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
+          <FaHtml5 key="FaHtml5" />,
+          <FaCss3 key="FaCss3" />,
+          <FaJs key="FaJs" />,
+          <FaReact key="FaReact" />,
+          <SiNextdotjs key="SiNextdotjs" />,
+          <SiFramer key="SiFramer" />,
+          <FaWordpress key="FaWordpress" />,
         ],
       },
       {
         title: 'UI/UX Design',
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        icons: [
+          <FaFigma key="FaFigma" />,
+          <SiAdobexd key="SiAdobexd" />,
+          <SiAdobephotoshop key="SiAdobephotoshop" />,
+        ],
       },
     ],
   },
@@ -118,7 +122,7 @@ const About = () => {
       <div className='container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6'>
         <div className='flex-1 flex flex-col justify-center'>
           <h2 className='h2'>Captivating <span className='text-accent'>stories</span> birth magnificent designs.</h2>
-          <p className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>10 years ago, I began freelancing as a developer. Since then, I've done remote
+          <p className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>10 years ago, I began freelancing as a developer. Since then, I have done remote
             work for agencies, consulted for startups, and collaborated on digital products
             for business and consumer use.
           </p>
@@ -171,7 +175,7 @@ const About = () => {
                   {/* icons */}
                   {item.icons?.map((icon, itemIndex) => {
                     return (
-                      <div className='text-2xl'>{icon}</div>
+                      <div key={itemIndex} className='text-2xl'>{icon}</div>
                     )
                   })}
                 </div>
