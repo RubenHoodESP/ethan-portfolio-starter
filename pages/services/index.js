@@ -1,6 +1,3 @@
-// icons
-import { RxCrop, RxDesktop, RxPencil2, RxReader, RxRocket } from "react-icons/rx";
-
 // components
 import ServiceSlider from "../../components/ServiceSlider";
 import Bulb from "../../components/Bulb";
