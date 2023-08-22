@@ -1,5 +1,10 @@
 import '../styles/globals.css';
 
+// import swiper styles
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
+
 //components
 import Layout from '../components/Layout';
 import Transition from "../components/Transition";
