@@ -15,7 +15,7 @@ const ParticlesContainer = () => {
       id="tsparticles"
       init={particlesInit}
       loaded={particlesLoaded}
-      className="h-full"
+      className="h-full hidden lg:block"
       options={{
         fullScreen: {enable: false},
         background: {
