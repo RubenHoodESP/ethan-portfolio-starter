@@ -1,6 +1,9 @@
 // fonts
 import { Sora } from "@next/font/google";
 
+// vercel analytics
+import { Analytics } from "@vercel/analytics/react";
+
 //font settings
 const sora = Sora({
   subsets: ['latin'],
@@ -17,10 +20,12 @@ const Layout = ({ children }) => {
   return (
     <div className={`page bg-site text-white bg-cover bg-no-repeat ${sora.variable}
     font-sora relative`}>
+      <link rel="manifest" href="/manifest.json" />
       <TopLeftImg/>
       <Nav />
       <Header/>
       { children }
+      <Analytics />
     </div>
   )
 };
