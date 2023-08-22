@@ -98,8 +98,8 @@ import Avatar from '../../components/Avatar';
 import Circles from '../../components/Circles';
 
 // framer motion
-import { motion } from "framer-motion";
-import { fadeIn } from "../../variants";
+// import { motion } from "framer-motion";
+// import { fadeIn } from "../../variants";
 
 // counter
 import CountUp from "react-countup";
@@ -110,15 +110,15 @@ const About = () => {
     <div className='h-full bg-primary/30 py-32 text-center xl:text-left'>
       <Circles />
       {/* avatar img */}
-      <motion.div
-        variants={fadeIn('right', 0.2)}
-        initial="hidden"
-        animate="show"
-        exit='hidden'
+      <div
+        // variants={fadeIn('right', 0.2)}
+        // initial="hidden"
+        // animate="show"
+        // exit='hidden'
         className='hidden xl-flex absolute bottom-0 -left-[370px]'
       >
         <Avatar />
-      </motion.div>
+      </div>
       <div className='container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6'>
         <div className='flex-1 flex flex-col justify-center'>
           <h2 className='h2'>Captivating <span className='text-accent'>stories</span> birth magnificent designs.</h2>
