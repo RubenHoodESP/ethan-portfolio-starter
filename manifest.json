@@ -1,0 +1,11 @@
+{
+    "short_name": "RK",
+    "name": "Ruben Kaizen",
+    "icons": [],
+    "start_url": "/",
+    "background_color": "#001f3d",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#001f3d"
+  }
+  

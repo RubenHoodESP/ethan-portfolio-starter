@@ -51,8 +51,8 @@ const Home = () => {
         <ParticlesContainer />
         {/* avatar */}
         <div
-          className="w-full h-full max-w-[737px] max-h-[678px]
-          absolute -bottom-32 lg:bottom-0 lg:right-[8%]"
+          className="w-full h-full max-w-[500px] max-h-[500px]
+          absolute -bottom-32 lg:bottom-0 lg:right-[17%]"
         >
           <Avatar />
         </div>
