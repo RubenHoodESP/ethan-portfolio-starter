@@ -5,6 +5,9 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
+// flag icons
+import "flag-icons";
+
 //components
 import Layout from '../components/Layout';
 import Transition from "../components/Transition";
@@ -15,17 +18,22 @@ import { useRouter } from 'next/router'
 // framer motion
 import { AnimatePresence, motion } from 'framer-motion'
 
+// translation
+import { NextIntlClientProvider } from 'next-intl';
+
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
   return (
-    <Layout>
-      <AnimatePresence mode='wait'>
-        <motion.div key={router.route} className='h-full'>
-          <Transition />
-          <Component {...pageProps} />
-        </motion.div>
-      </AnimatePresence>
-    </Layout>
+    <NextIntlClientProvider messages={pageProps.messages}>
+      <Layout>
+        <AnimatePresence mode='wait'>
+          <motion.div key={router.route} className='h-full'>
+            <Transition />
+            <Component {...pageProps} />
+          </motion.div>
+        </AnimatePresence>
+      </Layout>
+    </NextIntlClientProvider>
   );
 }
 

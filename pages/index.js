@@ -3,13 +3,13 @@ import ParticlesContainer from '../components/ParticlesContainer';
 import ProjectsBtn from '../components/ProjectsBtn';
 import Avatar from '../components/Avatar';
 
-// framer motion
-// import { motion } from "framer-motion";
-
-// variants
-// import { fadeIn } from "../variants";
+// translation
+import { useTranslations } from "next-intl";
 
 const Home = () => {
+
+  const t = useTranslations();
+
   return (
     <div className="bg-primary/60 h-full">
       {/* text */}
@@ -19,16 +19,14 @@ const Home = () => {
           <h1
             className="h1"
           >
-            Transforming Ideas <br /> Into{' '}
-            <span className="text-accent">Digital Reality</span>
+            { t('home.title') } <br />
+            <span className="text-accent">{t('home.title_accent')}</span>
           </h1>
           {/* subtitle */}
           <p
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores distinctio nisi eos beatae
-            blanditiis praesentium aliquam optio ullam, autem odit fugit ut maiores error quia necessitatibus
-            fugiat nostrum molestias nulla.
+            { t('home.description') }
           </p>
           {/* btn */}
           <div className="flex justify-center xl:hidden relative">
@@ -60,5 +58,16 @@ const Home = () => {
     </div>
   );
 };
+
+export async function getStaticProps(context) {
+  return {
+    props: {
+      // You can get the messages from anywhere you like. The recommended
+      // pattern is to put them in JSON files separated by locale and read
+      // the desired one based on the `locale` received from Next.js.
+      messages: (await import(`../messages/${context.locale}.json`)).default
+    }
+  };
+}
 
 export default Home;
