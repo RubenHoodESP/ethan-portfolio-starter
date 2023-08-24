@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 
+// translation
+import { useTranslations } from "next-intl";
+
 // icons 
 import { 
   FaHtml5,
@@ -17,13 +20,28 @@ import {
   SiAdobephotoshop,
  } from "react-icons/si";
 
-//  about data
+// components
+import Avatar from '../../components/Avatar';
+import Circles from '../../components/Circles';
+
+// framer motion
+// import { motion } from "framer-motion";
+// import { fadeIn } from "../../variants";
+
+// counter
+import CountUp from "react-countup";
+
+const About = () => {
+  const [index, setIndex] = useState(0);
+  const t = useTranslations();
+
+  //  about data
 const aboutData = [
   {
-    title: 'skills',
+    title: t('about.skills.title'),
     info: [
       {
-        title: 'Web Development',
+        title: t('about.skills.developer'),
         icons: [
           <FaHtml5 key="FaHtml5" />,
           <FaCss3 key="FaCss3" />,
@@ -35,7 +53,7 @@ const aboutData = [
         ],
       },
       {
-        title: 'UI/UX Design',
+        title: t('about.skills.design'),
         icons: [
           <FaFigma key="FaFigma" />,
           <SiAdobexd key="SiAdobexd" />,
@@ -44,21 +62,21 @@ const aboutData = [
       },
     ],
   },
+  // {
+  //   title: 'awards',
+  //   info: [
+  //     {
+  //       title: 'Webby Awards - Honoree',
+  //       stage: '2011 - 2012',
+  //     },
+  //     {
+  //       title: 'Adobe Design Achievement Awards - Finalist',
+  //       stage: '2009 - 2010',
+  //     },
+  //   ],
+  // },
   {
-    title: 'awards',
-    info: [
-      {
-        title: 'Webby Awards - Honoree',
-        stage: '2011 - 2012',
-      },
-      {
-        title: 'Adobe Design Achievement Awards - Finalist',
-        stage: '2009 - 2010',
-      },
-    ],
-  },
-  {
-    title: 'experience',
+    title: t('about.experience.title'),
     info: [
       {
         title: 'UX/UI Designer - XYZ Company',
@@ -74,38 +92,25 @@ const aboutData = [
       },
     ],
   },
-  {
-    title: 'credentials',
-    info: [
-      {
-        title: 'Web Development - ABC University, LA, CA',
-        stage: '2011',
-      },
-      {
-        title: 'Computer Science Diploma - AV Technical Institute',
-        stage: '2009',
-      },
-      {
-        title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-        stage: '2006',
-      },
-    ],
-  },
+  // {
+  //   title: 'credentials',
+  //   info: [
+  //     {
+  //       title: 'Web Development - ABC University, LA, CA',
+  //       stage: '2011',
+  //     },
+  //     {
+  //       title: 'Computer Science Diploma - AV Technical Institute',
+  //       stage: '2009',
+  //     },
+  //     {
+  //       title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
+  //       stage: '2006',
+  //     },
+  //   ],
+  // },
 ];
 
-// components
-import Avatar from '../../components/Avatar';
-import Circles from '../../components/Circles';
-
-// framer motion
-// import { motion } from "framer-motion";
-// import { fadeIn } from "../../variants";
-
-// counter
-import CountUp from "react-countup";
-
-const About = () => {
-  const [index, setIndex] = useState(0);
   return (
     <div className='h-full bg-primary/30 py-32 text-center xl:text-left'>
       <Circles />
