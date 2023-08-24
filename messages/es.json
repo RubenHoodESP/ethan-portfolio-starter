@@ -2,7 +2,7 @@
     "home": {
         "title": "Transformando ideas en ",
         "title_accent": "realidades digitales",
-        "description": "Desarrollador web con más de 4 años de experiencia, transformando ideas en realidades digitales impactantes."
+        "description": "Cada línea que escribo está pensada, limpia y probada, buscando la armonía entre eficiencia y claridad."
     },
     "about": {
         "skills": {
@@ -11,7 +11,9 @@
             "developer": "Desarrollo Web"
         },
         "experience": {
-            "title": "Experiencia"
+            "title": "Experiencia",
+            "front_end_developer": "Desarrollador Front-End",
+            "actuality": "Actualidad"
         }
     }
 }

@@ -79,16 +79,16 @@ const aboutData = [
     title: t('about.experience.title'),
     info: [
       {
-        title: 'UX/UI Designer - XYZ Company',
-        stage: '2012 - 2023',
+        title: t('about.experience.front_end_developer') + ' - Amaris Consulting',
+        stage: '2022 - ' + t('about.experience.actuality'),
       },
       {
-        title: 'Web Developer - ABC Agency',
-        stage: '2010 - 2012',
+        title: t('about.experience.front_end_developer') + ' - NTTData',
+        stage: '2020 - 2022',
       },
       {
-        title: 'Intern - DEF Corporation',
-        stage: '2008 - 2010',
+        title: t('about.experience.front_end_developer') + ' - Accenture',
+        stage: '2019 - 2020',
       },
     ],
   },

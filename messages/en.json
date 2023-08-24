@@ -2,7 +2,7 @@
     "home": {
         "title": "Transforming ideas into ",
         "title_accent": "digital realities",
-        "description": "Web developer with over 4 years of experience, transforming ideas into impactful digital realities."
+        "description": "Every line I write is thought out, clean, and tested, seeking harmony between efficiency and clarity."
     },
     "about": {
         "skills": {
@@ -11,7 +11,9 @@
             "developer": "Web Development"
         },
         "experience": {
-            "title": "Experience"
+            "title": "Experience",
+            "front_end_developer": "Front-End Developer",
+            "actuality": "Actuality"
         }
     }
 }
