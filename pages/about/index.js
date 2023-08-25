@@ -7,26 +7,23 @@ import { useTranslations } from "next-intl";
 import { 
   FaHtml5,
   FaCss3,
-  FaJs,
   FaReact,
-  FaWordpress,
   FaFigma,
  } from "react-icons/fa";
 
  import { 
   SiNextdotjs,
-  SiFramer,
   SiAdobexd,
   SiAdobephotoshop,
+  SiAngular,
+  SiTypescript,
+  SiJavascript,
+  SiGit,
  } from "react-icons/si";
 
 // components
 import Avatar from '../../components/Avatar';
 import Circles from '../../components/Circles';
-
-// framer motion
-// import { motion } from "framer-motion";
-// import { fadeIn } from "../../variants";
 
 // counter
 import CountUp from "react-countup";
@@ -45,11 +42,12 @@ const aboutData = [
         icons: [
           <FaHtml5 key="FaHtml5" />,
           <FaCss3 key="FaCss3" />,
-          <FaJs key="FaJs" />,
+          <SiJavascript key="SiJavascript" />,
+          <SiTypescript key="SiTypescript" />,
           <FaReact key="FaReact" />,
-          <SiNextdotjs key="SiNextdotjs" />,
-          <SiFramer key="SiFramer" />,
-          <FaWordpress key="FaWordpress" />,
+          <SiNextdotjs key="SiNextDotjs" />,
+          <SiAngular key="SiAngular" />,
+          <SiGit key="SiGit" />
         ],
       },
       {
@@ -112,19 +110,15 @@ const aboutData = [
 ];
 
   return (
-    <div className='h-full bg-primary/30 py-32 text-center xl:text-left'>
+    <div className='h-screen bg-primary/60 py-40 text-center xl:text-left overflow-y-auto'>
       <Circles />
       {/* avatar img */}
       <div
-        // variants={fadeIn('right', 0.2)}
-        // initial="hidden"
-        // animate="show"
-        // exit='hidden'
         className='hidden xl-flex absolute bottom-0 -left-[370px]'
       >
         <Avatar />
       </div>
-      <div className='container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6'>
+      <div className='container mx-auto flex flex-col items-center xl:flex-row gap-x-6'>
         <div className='flex-1 flex flex-col justify-center'>
           <h2 className='h2'>Captivating <span className='text-accent'>stories</span> birth magnificent designs.</h2>
           <p className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>10 years ago, I began freelancing as a developer. Since then, I have done remote
@@ -153,7 +147,7 @@ const aboutData = [
             </div>
           </div>
         </div>
-        <div className='flex flex-col w-full xl:max-w-[48%] h-[480px]'>
+        <div className='flex flex-col w-full xl:max-w-[48%] h-[250px] md:h-[480px]'>
           <div className='flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4'>
             {aboutData.map((item, itemIndex) => {
               return (

@@ -15,5 +15,41 @@
             "front_end_developer": "Desarrollador Front-End",
             "actuality": "Actualidad"
         }
+    },
+    "services": {
+        "title": "Mis servicios",
+        "description": "",
+        "list": {
+            "design": {
+                "title": "Diseño",
+                "description": ""
+            },
+            "development": {
+                "title": "Desarrollo",
+                "description": ""
+            },
+            "optimization": {
+                "title": "Optimización",
+                "description": ""
+            },
+            "SEO": {
+                "title": "SEO",
+                "description": ""
+            }
+        }
+    },
+    "proyects": {
+        "title": "Mis proyectos",
+        "description": ""
+    },
+    "contact": {
+        "title": "Conectemos",
+        "form": {
+            "name": "Nombre",
+            "email": "Email",
+            "subject": "Asunto",
+            "message": "Mensaje"
+        },
+        "send": "Enviar"
     }
 }

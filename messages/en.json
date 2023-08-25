@@ -2,7 +2,7 @@
     "home": {
         "title": "Transforming ideas into ",
         "title_accent": "digital realities",
-        "description": "Every line I write is thought out, clean, and tested, seeking harmony between efficiency and clarity."
+        "description": "Every line I write is thought out, clean, tested and seeking harmony between efficiency and clarity."
     },
     "about": {
         "skills": {
@@ -15,5 +15,41 @@
             "front_end_developer": "Front-End Developer",
             "actuality": "Actuality"
         }
+    },
+    "services": {
+        "title": "My services",
+        "description": "",
+        "list": {
+            "design": {
+                "title": "Design",
+                "description": ""
+            },
+            "development": {
+                "title": "Development",
+                "description": ""
+            },
+            "optimization": {
+                "title": "Optimization",
+                "description": ""
+            },
+            "SEO": {
+                "title": "SEO",
+                "description": ""
+            }
+        }
+    },
+    "proyects": {
+        "title": "My proyects",
+        "description": ""
+    },
+    "contact": {
+        "title": "Let's connect",
+        "form": {
+            "name": "Name",
+            "email": "Email",
+            "subject": "Subject",
+            "message": "Message"
+        },
+        "send": "Send"
     }
 }
