@@ -24,10 +24,7 @@ const Services = () => {
               { t('services.title') } <span className="text-accent">.</span>
             </h2>
             <p
-              className="mb-4 max-w-[400px] mx-auto lg:mx-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Soluta at minima expedita, molestiae quae, ut culpa ad
-                aliquid quo nisi modi harum accusamus temporibus placeat
-                quas numquam eaque! Possimus, laudantium.
+              className="mb-4 max-w-[400px] mx-auto lg:mx-0">{ t('services.description') }
             </p>
           </div>
           {/* slider */}

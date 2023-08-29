@@ -2,9 +2,13 @@
 import WorkSlider from "../../components/WorkSlider";
 import Bulb from "../../components/Bulb";
 import Circles from "../../components/Circles";
+import { useTranslations } from "next-intl";
 
 
 const Work = () => {
+
+  const t = useTranslations();
+
   return (
     <div className="h-full bg-primary/60 py-36 flex items-center">
       <Circles />
@@ -14,13 +18,11 @@ const Work = () => {
           <div className="text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0">
             <h2
               className="h2 xl:mt-8">
-              My work <span className="text-accent">.</span>
+              { t('proyects.title') } <span className="text-accent">.</span>
             </h2>
             <p
-              className="mb-4 max-w-[400px] mx-auto lg:mx-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Soluta at minima expedita, molestiae quae, ut culpa ad
-                aliquid quo nisi modi harum accusamus temporibus placeat
-                quas numquam eaque! Possimus, laudantium.
+              className="mb-4 max-w-[400px] mx-auto lg:mx-0">
+                { t('proyects.description') }
             </p>
           </div>
           {/* slider */}

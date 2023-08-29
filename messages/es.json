@@ -13,12 +13,14 @@
         "experience": {
             "title": "Experiencia",
             "front_end_developer": "Desarrollador Front-End",
-            "actuality": "Actualidad"
+            "actuality": "Actualidad",
+            "years_of_experience": "Años de experiencia",
+            "number_of_projects": "Número de proyectos"
         }
     },
     "services": {
         "title": "Mis servicios",
-        "description": "",
+        "description": "Estos son algunos de los conocimientos y servicios que puedo ofrecer.",
         "list": {
             "design": {
                 "title": "Diseño",
@@ -40,7 +42,7 @@
     },
     "proyects": {
         "title": "Mis proyectos",
-        "description": ""
+        "description": "Aquí tienes una prueba de mis conocimientos y creatividad, empleando siempre las últimas tecnologías y procurando estar actualizado."
     },
     "contact": {
         "title": "Conectemos",

@@ -7,37 +7,37 @@ from "react-icons/rx";
 
 // import required modules
 import { FreeMode, Pagination } from "swiper";
+import { useTranslations } from "next-intl";
 
-// service data
-export const serviceData = [
-  {
-    icon: <RxCrop />,
-    title: 'Branding',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    icon: <RxPencil2 />,
-    title: 'Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    icon: <RxDesktop />,
-    title: 'Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    icon: <RxReader />,
-    title: 'Copywriting',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    icon: <RxRocket />,
-    title: 'SEO',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-];
 
 const ServiceSlider = () => {
+
+  const t = useTranslations();
+
+  // service data
+  const serviceData = [
+    {
+      icon: <RxPencil2 />,
+      title: t('services.list.design.title'),
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    },
+    {
+      icon: <RxDesktop />,
+      title: t('services.list.development.title'),
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    },
+    {
+      icon: <RxReader />,
+      title: t('services.list.optimization.title'),
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    },
+    {
+      icon: <RxRocket />,
+      title: t('services.list.SEO.title'),
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    },
+  ];
+
   return (
     <Swiper
       breakpoints={{
